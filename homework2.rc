@@ -1,0 +1,1104 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\homework2.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\homework2.ico"
+IDR_HOMEWOTYPE          ICON    DISCARDABLE     "res\\homework2Doc.ico"
+IDI_LIGHT_ICON          ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      IDM_OBJECT_MANAGER
+    BUTTON      IDM_TRANSFORMATION
+    BUTTON      IDM_VIEWING
+    BUTTON      ID_PARAMETERS_PROJECTIONMETHOD
+    BUTTON      IDM_WIRE_FRAME
+    BUTTON      IDM_WIRE_FRAME_DEPTH_CUE
+    BUTTON      IDM_WIRE_FRAME_BACKFACE_ELIMINATION
+    BUTTON      IDM_PAINTERS_ALGORITHM
+    BUTTON      IDM_PAINTERS_ALGORITHM_TRACED_FACETS
+    BUTTON      IDM_GOURAUD_SHADING
+    BUTTON      IDM_PHONG_SHADING
+    BUTTON      ID_OPTIONS_LINETHICKNESS
+    BUTTON      ID_OPTIONS_BACKGROUNDCOLOR
+    BUTTON      ID_MATERIALSELECTOR
+    BUTTON      IDM_LIGHT_PARAMETERS
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Object Manager",             IDM_OBJECT_MANAGER
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Parameters"
+    BEGIN
+        MENUITEM "&Transformation",             IDM_TRANSFORMATION
+        MENUITEM "&Camera (Viewing Palette)",   IDM_VIEWING
+        MENUITEM "&Projection Method",          ID_PARAMETERS_PROJECTIONMETHOD
+
+        MENUITEM "Z-Buffer Parameters",         IDM_Z_BUFFER_PARAMETERS
+    END
+    POPUP "&Display Type"
+    BEGIN
+        MENUITEM "Wire Frame",                  IDM_WIRE_FRAME, CHECKED
+        MENUITEM "Wire Frame / Depth Cue",      IDM_WIRE_FRAME_DEPTH_CUE
+        , CHECKED
+        MENUITEM "Wire Frame / Backface Elimination", 
+                                                IDM_WIRE_FRAME_BACKFACE_ELIMINATION
+        , CHECKED
+        MENUITEM "Painter's Algorithm",         IDM_PAINTERS_ALGORITHM
+        , CHECKED
+        MENUITEM "Painter's Algorithm (Traced Facets)", 
+                                                IDM_PAINTERS_ALGORITHM_TRACED_FACETS
+        , CHECKED
+        MENUITEM "Goraud Shading",              IDM_GOURAUD_SHADING, CHECKED
+        MENUITEM "Phong Shading",               IDM_PHONG_SHADING, CHECKED
+    END
+    POPUP "Materials"
+    BEGIN
+        MENUITEM "Material Selector",           ID_MATERIALSELECTOR
+        MENUITEM "Material Editor",             IDM_MATERIAL_EDITOR
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "Line Thickness",              ID_OPTIONS_LINETHICKNESS
+        MENUITEM "Background Color",            ID_OPTIONS_BACKGROUNDCOLOR
+        MENUITEM "Draw Coordinate Axes",        IDM_DRAW_AXIS, CHECKED
+        MENUITEM "Enable Mouse Camera pan",     IDM_MOUSE_CAMERA_PAN
+        , CHECKED
+    END
+    POPUP "&Light Sources"
+    BEGIN
+        MENUITEM "&Ambient Light Properties",   IDM_AMBIENT_LIGHT_PROPERTIES
+        MENUITEM "Point Light 1 Parameters",    ID_POINT_LIGHT_1
+        MENUITEM "Point Light 2 Parameters",    ID_POINT_LIGHT_2
+        MENUITEM "Point Light 3 Parameters",    ID_POINT_LIGHT_3
+        MENUITEM "Point Light 4 Parameters",    ID_POINT_LIGHT_4
+        MENUITEM "Point Light 5 Parameters",    ID_POINT_LIGHT_5
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Three Dimensional Transformations...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 201, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Three Dimensional Transformations..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Three Dimensional Transformations\n\nGreg Buron\nCS580 Winter 2002\nAssignment #1\n3D Transformations\nInstructor: Saim Ural\n\n\nCopyright (C) 2002",
+                    IDC_STATIC,47,13,119,96,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,144,106,50,14,WS_GROUP
+END
+
+IDD_OBJECT_MANAGER_DIALOG DIALOG DISCARDABLE  0, 0, 299, 209
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Object Manager"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,148,188,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,209,188,50,14
+    COMBOBOX        IDC_ADD_OBJECT_COMBO_BOX,14,20,128,56,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Add an object",IDC_STATIC,7,7,151,53
+    PUSHBUTTON      "Add Object",IDC_ADD_OBJECT_BUTTON,14,39,82,15
+    LISTBOX         IDC_DISPLAYED_OBJECTS_LIST,179,20,95,110,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Displayed Objects",IDC_STATIC,168,7,116,144
+    GROUPBOX        "Current Object",IDC_STATIC,7,64,151,86
+    COMBOBOX        IDC_CURRENT_OBJECT_COMBO,13,108,128,55,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select an object from the current object\ncombo box to change the current \nobject.  ",
+                    IDC_STATIC,14,79,125,27
+    PUSHBUTTON      "Delete Current Object",IDC_DELETE_CURRENT_OBJECT,7,157,
+                    112,15
+    PUSHBUTTON      "Delete All Objects",IDC_DELETE_ALL_OBJECTS,7,179,112,15
+END
+
+IDD_VIEW_PARAMETERS_DIALOG DIALOG DISCARDABLE  0, 0, 241, 294
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View Palette"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,125,273,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,184,273,50,14
+    LTEXT           "X:",IDC_STATIC,14,102,9,10
+    LTEXT           "Y:",IDC_STATIC,92,102,9,10
+    LTEXT           "Z:",IDC_STATIC,165,102,9,10
+    LTEXT           "",IDC_VIEW_REFERENCE_POINT_X_DISPLAY,40,84,24,13
+    LTEXT           "",IDC_VIEW_REFERENCE_POINT_Y_DISPLAY,118,84,24,13
+    LTEXT           "",IDC_VIEW_REFERENCE_POINT_Z_DISPLAY,189,84,24,13
+    LTEXT           "X:",IDC_STATIC,14,204,9,10
+    LTEXT           "Y:",IDC_STATIC,92,204,9,10
+    LTEXT           "Z:",IDC_STATIC,165,204,9,10
+    LTEXT           "",IDC_VIEW_UP_X_DISPLAY,40,187,24,13
+    LTEXT           "",IDC_VIEW_UP_Y_DISPLAY,118,187,24,13
+    LTEXT           "",IDC_VIEW_UP_Z_DISPLAY,189,187,24,13
+    LTEXT           "U:",IDC_STATIC,14,256,9,10
+    LTEXT           "V:",IDC_STATIC,92,256,9,10
+    LTEXT           "N:",IDC_STATIC,165,256,9,10
+    LTEXT           "",IDC_CENTER_OF_PROJECTION_U_DISPLAY,40,239,24,13
+    LTEXT           "",IDC_CENTER_OF_PROJECTION_V_DISPLAY,118,239,24,13
+    LTEXT           "",IDC_CENTER_OF_PROJECTION_N_DISPLAY,189,239,24,13
+    LTEXT           "X:",IDC_STATIC,14,154,9,10
+    LTEXT           "Y:",IDC_STATIC,92,154,9,10
+    LTEXT           "Z:",IDC_STATIC,165,154,9,10
+    LTEXT           "",IDC_VIEW_PLANE_NORMAL_X_DISPLAY,40,137,24,13
+    LTEXT           "",IDC_VIEW_PLANE_NORMAL_Y_DISPLAY,118,137,24,13
+    LTEXT           "",IDC_VIEW_PLANE_NORMAL_Z_DISPLAY,189,137,24,13
+    GROUPBOX        "View Reference Point (VRP) parameters   ",IDC_STATIC,7,
+                    73,227,45
+    GROUPBOX        "View Plane Normal (VPN) parameters   ",IDC_STATIC,7,125,
+                    227,45
+    GROUPBOX        "View Up Vector (VUP) parameters   ",IDC_STATIC,7,175,
+                    227,45
+    GROUPBOX        "Center Of Projection (COP) parameters  ",IDC_STATIC,7,
+                    226,227,45
+    LTEXT           "Use the camera view palette to change your perspective in viewing\nthe three-dimensional objects.\n\n   VRP: The center of the camera coordinate system.\n  ",
+                    IDC_STATIC,7,7,227,33
+    LTEXT           "   VPN: The plane that defines the camera ""lens"".\n   VUP: The vector that defines what direction is ""up""\n   COP: The point that represents the eye of the observer.",
+                    IDC_STATIC,7,39,227,27
+    SCROLLBAR       IDC_CAMERA_VIEW_REFERENCE_POINT_X_SLIDER,25,103,51,8
+    SCROLLBAR       IDC_CAMERA_VIEW_REFERENCE_POINT_Y_SLIDER,101,103,51,8
+    SCROLLBAR       IDC_CAMERA_VIEW_REFERENCE_POINT_Z_SLIDER,176,103,51,8
+    SCROLLBAR       IDC_CAMERA_VIEW_PLANE_NORMAL_X_SLIDER,26,154,51,8
+    SCROLLBAR       IDC_CAMERA_VIEW_PLANE_NORMAL_Y_SLIDER,102,154,51,8
+    SCROLLBAR       IDC_CAMERA_VIEW_PLANE_NORMAL_Z_SLIDER,176,154,51,8
+    SCROLLBAR       IDC_CAMERA_VIEW_UP_VECTOR_X_SLIDER,26,205,51,8
+    SCROLLBAR       IDC_CAMERA_VIEW_UP_VECTOR_Y_SLIDER,102,205,51,8
+    SCROLLBAR       IDC_CAMERA_VIEW_UP_VECTOR_Z_SLIDER,176,205,51,8
+    SCROLLBAR       IDC_CAMERA_CENTER_OF_PROJECTION_U_SLIDER,25,256,51,8
+    SCROLLBAR       IDC_CAMERA_CENTER_OF_PROJECTION_V_SLIDER,101,256,51,8
+    SCROLLBAR       IDC_CAMERA_CENTER_OF_PROJECTION_N_SLIDER,175,256,51,8
+END
+
+IDD_PROJECTION_METHOD_DIALOG DIALOG DISCARDABLE  0, 0, 173, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Projection Method"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,47,44,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,107,44,50,14
+    CONTROL         "Parallel Projection",IDC_PARALLEL_PROJECTION,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,7,7,141,16
+    CONTROL         "Perspective Projection",IDC_PERSPECTIVE_PROJECTION,
+                    "Button",BS_AUTORADIOBUTTON,7,24,141,16
+END
+
+IDD_TRANSFORMATION_DIALOG DIALOG DISCARDABLE  0, 0, 324, 210
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Transformations Palette"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,208,189,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,267,189,50,14
+    GROUPBOX        "Translation Parameters   ",IDC_STATIC,160,113,148,62
+    SCROLLBAR       IDC_TRANSLATION_X_SCROLLBAR,182,131,85,9
+    SCROLLBAR       IDC_TRANSLATION_Y_SCROLLBAR,182,145,85,9
+    SCROLLBAR       IDC_TRANSLATION_Z_SCROLLBAR,182,158,85,9
+    LTEXT           "X: ",IDC_STATIC,170,132,9,11
+    LTEXT           "Y: ",IDC_STATIC,170,146,9,11
+    LTEXT           "Z: ",IDC_STATIC,170,159,9,11
+    LTEXT           "",IDC_TRANSLATION_X_DISPLAY,272,131,30,10
+    LTEXT           "",IDC_TRANSLATION_Y_DISPLAY,272,145,30,10
+    LTEXT           "",IDC_TRANSLATION_Z_DISPLAY,272,158,30,10
+    GROUPBOX        "Rotation Parameters   ",IDC_STATIC,8,46,148,62
+    SCROLLBAR       IDC_ROTATION_X_SCROLLBAR,30,64,85,9
+    SCROLLBAR       IDC_ROTATION_Y_SCROLLBAR,30,78,85,9
+    SCROLLBAR       IDC_ROTATION_Z_SCROLLBAR,30,91,85,9
+    LTEXT           "X: ",IDC_STATIC,18,65,9,11
+    LTEXT           "Y: ",IDC_STATIC,18,79,9,11
+    LTEXT           "Z: ",IDC_STATIC,18,92,9,11
+    LTEXT           "",IDC_ROTATION_X_DISPLAY,120,64,30,10
+    LTEXT           "",IDC_ROTATION_Y_DISPLAY,120,78,30,10
+    LTEXT           "",IDC_ROTATION_Z_DISPLAY,120,91,30,10
+    GROUPBOX        "Scale Parameters   ",IDC_STATIC,7,112,148,62
+    SCROLLBAR       IDC_SCALE_X_SCROLLBAR,29,131,85,9
+    SCROLLBAR       IDC_SCALE_Y_SCROLLBAR,29,144,85,9
+    SCROLLBAR       IDC_SCALE_Z_SCROLLBAR,29,158,85,9
+    LTEXT           "X: ",IDC_STATIC,17,131,9,11
+    LTEXT           "Y: ",IDC_STATIC,17,145,9,11
+    LTEXT           "Z: ",IDC_STATIC,17,158,9,11
+    LTEXT           "",IDC_SCALE_X_DISPLAY,119,131,30,10
+    LTEXT           "",IDC_SCALE_Y_DISPLAY,119,144,30,10
+    LTEXT           "",IDC_SCALE_Z_DISPLAY,119,158,30,10
+    GROUPBOX        "Shear Parameters   ",IDC_STATIC,160,46,148,62
+    SCROLLBAR       IDC_SHEAR_X_SCROLLBAR,182,64,85,9
+    SCROLLBAR       IDC_SHEAR_Y_SCROLLBAR,182,78,85,9
+    SCROLLBAR       IDC_SHEAR_Z_SCROLLBAR,182,91,85,9
+    LTEXT           "X: ",IDC_STATIC,170,65,9,11
+    LTEXT           "Y: ",IDC_STATIC,170,79,9,11
+    LTEXT           "Z: ",IDC_STATIC,170,92,9,11
+    LTEXT           "",IDC_SHEAR_X_DISPLAY,272,64,30,10
+    LTEXT           "",IDC_SHEAR_Y_DISPLAY,272,78,30,10
+    LTEXT           "",IDC_SHEAR_Z_DISPLAY,272,91,30,10
+    LTEXT           "Use the sliders for manipulating the position of the object in 3D space.  Use the rotation\nparameters for rotating the object about the given axis.  Use the scale pararmeters to",
+                    IDC_STATIC,7,7,310,16
+    LTEXT           "to modify the size of the object along the given axis.  Use the shear parameters to modify\nthe slant along an axis, and use the translation parameters to move the object in the 3D space.",
+                    IDC_STATIC,7,23,310,16
+END
+
+IDD_LINE_THICKNESS_DIALOG DIALOG DISCARDABLE  0, 0, 196, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Current Object Line Thickness"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,71,65,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,139,65,50,14
+    LTEXT           "Select a line thickness for the current object.",
+                    IDC_STATIC,7,7,147,15
+    CONTROL         "Slider1",IDC_LINE_THICKNESS_SLIDER,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,7,33,138,16
+    LTEXT           "",IDC_LINE_THICKNESS_DISPLAY,146,33,37,15
+END
+
+IDD_BACKGROUND_COLOR_DIALOG DIALOG DISCARDABLE  0, 0, 235, 133
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Background Color Palette"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,91,112,50,14
+    CONTROL         "Slider1",IDC_BACKGROUND_COLOR_RED_SLIDER,
+                    "msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,41,37,148,
+                    14
+    CONTROL         "Slider1",IDC_BACKGROUND_COLOR_GREEN_SLIDER,
+                    "msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,41,61,148,
+                    14
+    CONTROL         "Slider1",IDC_BACKGROUND_COLOR_BLUE_SLIDER,
+                    "msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,41,85,148,
+                    14
+    LTEXT           "",IDC_BACKGROUND_COLOR_RED_VALUE_DISPLAY,191,36,24,14
+    LTEXT           "",IDC_BACKGROUND_COLOR_GREEN_VALUE_DISPLAY,191,61,24,14
+    LTEXT           "",IDC_BACKGROUND_COLOR_BLUE_VALUE_DISPLAY,191,85,24,14
+    LTEXT           "Green",IDC_STATIC,13,62,23,12
+    LTEXT           "Red",IDC_STATIC,13,38,23,12
+    LTEXT           "Blue",IDC_STATIC,13,86,23,12
+    LTEXT           "Use the slider controls to change the background color of the\ndisplay area.  Click OK when you are done.",
+                    IDC_STATIC,7,7,200,24
+END
+
+IDD_LIGHT_PARAMETERS DIALOG DISCARDABLE  0, 0, 592, 246
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Light Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,470,225,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,535,225,50,14
+    GROUPBOX        "Ambient Light Parameters   ",IDC_STATIC,7,7,284,65
+    CONTROL         "Slider1",IDC_AMBIENT_LIGHT_RED_SLIDER,"msctls_trackbar32",
+                    TBS_NOTICKS | WS_TABSTOP,12,44,76,13
+    CONTROL         "Slider1",IDC_AMBIENT_LIGHT_GREEN_SLIDER,
+                    "msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,109,44,76,
+                    13
+    CONTROL         "Slider1",IDC_AMBIENT_LIGHT_BLUE_SLIDER,
+                    "msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,202,44,76,
+                    13
+    LTEXT           "0",IDC_STATIC,12,57,8,8
+    LTEXT           "255",IDC_STATIC,74,57,14,8
+    LTEXT           "",IDC_AMBIENT_LIGHT_RED_DISPLAY,35,57,30,8
+    LTEXT           "0",IDC_STATIC,109,57,8,8
+    LTEXT           "255",IDC_STATIC,173,57,14,8
+    LTEXT           "",IDC_AMBIENT_LIGHT_GREEN_DISPLAY,132,57,30,8
+    LTEXT           "0",IDC_STATIC,203,57,8,8
+    LTEXT           "255",IDC_STATIC,266,57,14,8
+    LTEXT           "",IDC_AMBIENT_LIGHT_BLUE_DISPLAY,225,57,30,8
+    LTEXT           "Red",IDC_STATIC,43,33,17,9
+    LTEXT           "Green",IDC_STATIC,138,33,20,9
+    LTEXT           "Blue",IDC_STATIC,235,33,17,9
+    LTEXT           "Use the slider controls to set the intensity of the ambient light in the rendering frame.",
+                    IDC_STATIC,13,21,264,11
+    GROUPBOX        "Point Light #1   ",IDC_STATIC,7,78,284,66
+    CONTROL         "Slider1",IDC_POINT_LIGHT_1_RED_SLIDER,"msctls_trackbar32",
+                    TBS_NOTICKS | WS_TABSTOP,145,128,46,13
+    LTEXT           "",IDC_POINT_LIGHT_1_RED_DISPLAY,170,117,19,8
+    LTEXT           "Red",IDC_STATIC,147,117,17,9
+    CONTROL         "Slider1",IDC_POINT_LIGHT_1_GREEN_SLIDER,
+                    "msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,193,128,46,
+                    13
+    LTEXT           "",IDC_POINT_LIGHT_1_GREEN_DISPLAY,218,117,19,8
+    LTEXT           "Green",IDC_STATIC,196,117,22,9
+    CONTROL         "Slider1",IDC_POINT_LIGHT_1_BLUE_SLIDER,
+                    "msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,244,128,46,
+                    13
+    LTEXT           "",IDC_POINT_LIGHT_1_BLUE_DISPLAY,269,117,19,8
+    LTEXT           "Blue",IDC_STATIC,246,117,22,9
+    CTEXT           "______________ Intensity______________ ",IDC_STATIC,144,
+                    103,144,13
+    EDITTEXT        IDC_POINT_LIGHT_1_X_POSITION_EDIT_BOX,28,127,27,13,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_POINT_LIGHT_1_Y_POSITION_EDIT_BOX,62,127,27,13,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_POINT_LIGHT_1_Z_POSITION_EDIT_BOX,96,127,27,13,
+                    ES_AUTOHSCROLL
+    CTEXT           "___________ Location ____________ ",IDC_STATIC,12,103,
+                    124,13
+    LTEXT           "X",IDC_STATIC,38,118,8,8
+    LTEXT           "Y",IDC_STATIC,72,118,8,8
+    LTEXT           "Z",IDC_STATIC,106,118,8,8
+    GROUPBOX        "Point Light #2  ",IDC_STATIC,7,149,284,66
+    CONTROL         "Slider1",IDC_POINT_LIGHT_2_RED_SLIDER,"msctls_trackbar32",
+                    TBS_NOTICKS | WS_TABSTOP,145,195,46,13
+    LTEXT           "",IDC_POINT_LIGHT_2_RED_DISPLAY,170,184,19,8
+    LTEXT           "Red",IDC_STATIC,147,184,17,9
+    CONTROL         "Slider1",IDC_POINT_LIGHT_2_GREEN_SLIDER,
+                    "msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,193,195,46,
+                    13
+    LTEXT           "",IDC_POINT_LIGHT_2_GREEN_DISPLAY,218,184,19,8
+    LTEXT           "Green",IDC_STATIC,196,184,22,9
+    CONTROL         "Slider1",IDC_POINT_LIGHT_2_BLUE_SLIDER,
+                    "msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,244,195,46,
+                    13
+    LTEXT           "",IDC_POINT_LIGHT_2_BLUE_DISPLAY,269,184,19,8
+    LTEXT           "Blue",IDC_STATIC,246,184,22,9
+    CTEXT           "______________ Intensity______________ ",IDC_STATIC,144,
+                    171,144,13
+    EDITTEXT        IDC_POINT_LIGHT_2_X_POSITION_EDIT_BOX,28,195,27,13,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_POINT_LIGHT_2_Y_POSITION_EDIT_BOX,62,195,27,13,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_POINT_LIGHT_2_Z_POSITION_EDIT_BOX,96,195,27,13,
+                    ES_AUTOHSCROLL
+    CTEXT           "___________ Location ____________ ",IDC_STATIC,12,171,
+                    124,13
+    LTEXT           "X",IDC_STATIC,38,186,8,8
+    LTEXT           "Y",IDC_STATIC,72,186,8,8
+    LTEXT           "Z",IDC_STATIC,106,186,8,8
+    GROUPBOX        "Point Light #3   ",IDC_STATIC,297,7,284,66
+    CONTROL         "Slider1",IDC_POINT_LIGHT_3_RED_SLIDER,"msctls_trackbar32",
+                    TBS_NOTICKS | WS_TABSTOP,435,57,46,13
+    LTEXT           "",IDC_POINT_LIGHT_3_RED_DISPLAY,460,46,19,8
+    LTEXT           "Red",IDC_STATIC,437,46,17,9
+    CONTROL         "Slider1",IDC_POINT_LIGHT_3_GREEN_SLIDER,
+                    "msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,483,57,46,
+                    13
+    LTEXT           "",IDC_POINT_LIGHT_3_GREEN_DISPLAY,508,46,19,8
+    LTEXT           "Green",IDC_STATIC,486,46,22,9
+    CONTROL         "Slider1",IDC_POINT_LIGHT_3_BLUE_SLIDER,
+                    "msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,534,57,46,
+                    13
+    LTEXT           "",IDC_POINT_LIGHT_3_BLUE_DISPLAY,559,46,19,8
+    LTEXT           "Blue",IDC_STATIC,536,46,22,9
+    CTEXT           "______________ Intensity______________ ",IDC_STATIC,434,
+                    32,144,13
+    EDITTEXT        IDC_POINT_LIGHT_3_X_POSITION_EDIT_BOX,318,56,27,13,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_POINT_LIGHT_3_Y_POSITION_EDIT_BOX,352,56,27,13,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_POINT_LIGHT_3_Z_POSITION_EDIT_BOX,386,56,27,13,
+                    ES_AUTOHSCROLL
+    CTEXT           "___________ Location ____________ ",IDC_STATIC,302,32,
+                    124,13
+    LTEXT           "X",IDC_STATIC,328,47,8,8
+    LTEXT           "Y",IDC_STATIC,362,47,8,8
+    LTEXT           "Z",IDC_STATIC,396,47,8,8
+    GROUPBOX        "Point Light #4   ",IDC_STATIC,297,79,284,66
+    CONTROL         "Slider1",IDC_POINT_LIGHT_4_RED_SLIDER,"msctls_trackbar32",
+                    TBS_NOTICKS | WS_TABSTOP,435,127,46,13
+    LTEXT           "",IDC_POINT_LIGHT_4_RED_DISPLAY,460,117,19,8
+    LTEXT           "Red",IDC_STATIC,437,117,17,9
+    CONTROL         "Slider1",IDC_POINT_LIGHT_4_GREEN_SLIDER,
+                    "msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,483,127,46,
+                    13
+    LTEXT           "",IDC_POINT_LIGHT_4_GREEN_DISPLAY,508,117,19,8
+    LTEXT           "Green",IDC_STATIC,486,117,22,9
+    CONTROL         "Slider1",IDC_POINT_LIGHT_4_BLUE_SLIDER,
+                    "msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,534,127,46,
+                    13
+    LTEXT           "",IDC_POINT_LIGHT_4_BLUE_DISPLAY,559,117,19,8
+    LTEXT           "Blue",IDC_STATIC,536,117,22,9
+    CTEXT           "______________ Intensity______________ ",IDC_STATIC,434,
+                    103,144,13
+    EDITTEXT        IDC_POINT_LIGHT_4_X_POSITION_EDIT_BOX,318,127,27,13,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_POINT_LIGHT_4_Y_POSITION_EDIT_BOX,352,127,27,13,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_POINT_LIGHT_4_Z_POSITION_EDIT_BOX,386,127,27,13,
+                    ES_AUTOHSCROLL
+    CTEXT           "___________ Location ____________ ",IDC_STATIC,302,103,
+                    124,13
+    LTEXT           "X",IDC_STATIC,328,118,8,8
+    LTEXT           "Y",IDC_STATIC,362,118,8,8
+    LTEXT           "Z",IDC_STATIC,396,118,8,8
+    GROUPBOX        "Point Light #5    ",IDC_STATIC,297,149,284,66
+    CONTROL         "Slider1",IDC_POINT_LIGHT_5_RED_SLIDER,"msctls_trackbar32",
+                    TBS_NOTICKS | WS_TABSTOP,435,198,46,13
+    LTEXT           "",IDC_POINT_LIGHT_5_RED_DISPLAY,460,187,19,8
+    LTEXT           "Red",IDC_STATIC,437,187,17,9
+    CONTROL         "Slider1",IDC_POINT_LIGHT_5_GREEN_SLIDER,
+                    "msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,483,198,46,
+                    13
+    LTEXT           "",IDC_POINT_LIGHT_5_GREEN_DISPLAY,508,187,19,8
+    LTEXT           "Green",IDC_STATIC,486,187,22,9
+    CONTROL         "Slider1",IDC_POINT_LIGHT_5_BLUE_SLIDER,
+                    "msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,534,198,46,
+                    13
+    LTEXT           "",IDC_POINT_LIGHT_5_BLUE_DISPLAY,559,187,19,8
+    LTEXT           "Blue",IDC_STATIC,536,187,22,9
+    CTEXT           "______________ Intensity______________ ",IDC_STATIC,434,
+                    173,144,13
+    EDITTEXT        IDC_POINT_LIGHT_5_X_POSITION_EDIT_BOX,318,197,27,13,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_POINT_LIGHT_5_Y_POSITION_EDIT_BOX,352,197,27,13,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_POINT_LIGHT_5_Z_POSITION_EDIT_BOX,386,197,27,13,
+                    ES_AUTOHSCROLL
+    CTEXT           "___________ Location ____________ ",IDC_STATIC,302,173,
+                    124,13
+    LTEXT           "X",IDC_STATIC,328,188,8,8
+    LTEXT           "Y",IDC_STATIC,362,188,8,8
+    LTEXT           "Z",IDC_STATIC,396,188,8,8
+    CONTROL         "Active",IDC_LIGHT_5_ACTIVE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,303,159,42,13
+    CONTROL         "Active",IDC_LIGHT_4_ACTIVE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,303,91,42,13
+    CONTROL         "Active",IDC_LIGHT_3_ACTIVE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,303,19,42,13
+    CONTROL         "Active",IDC_LIGHT_2_ACTIVE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,13,160,42,13
+    CONTROL         "Active",IDC_LIGHT_1_ACTIVE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,13,89,42,13
+END
+
+IDD_AMBIENT_LIGHT_DIALOG DIALOG DISCARDABLE  0, 0, 186, 138
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ambient Light Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,77,117,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,117,50,14
+    LTEXT           "Set the amount of ambient light in the scene.  Use the red, green, and blue sliders to set the amount of each color of light, respectively.",
+                    IDC_STATIC,7,7,172,26
+    CONTROL         "Slider1",IDC_AMBIENT_RED_SLIDER,"msctls_trackbar32",
+                    WS_TABSTOP,32,46,104,19
+    CONTROL         "Slider1",IDC_AMBIENT_GREEN_SLIDER,"msctls_trackbar32",
+                    WS_TABSTOP,32,67,104,19
+    CONTROL         "Slider1",IDC_AMBIENT_BLUE_SLIDER,"msctls_trackbar32",
+                    WS_TABSTOP,32,88,104,19
+    LTEXT           "Red",IDC_STATIC,7,49,25,14
+    LTEXT           "Green",IDC_STATIC,7,66,25,14
+    LTEXT           "Blue",IDC_STATIC,7,86,25,14
+    RTEXT           "",IDC_AMBIENT_RED_DISPLAY,143,47,26,12
+    RTEXT           "",IDC_AMBIENT_GREEN_DISPLAY,143,67,26,12
+    RTEXT           "",IDC_AMBIENT_BLUE_DISPLAY,143,87,26,12
+END
+
+IDD_POINT_LIGHT_DIALOG DIALOG DISCARDABLE  0, 0, 200, 182
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Point Light Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,81,161,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,143,161,50,14
+    LTEXT           "",IDC_POINT_LIGHT_HEADER_DISPLAY,7,7,174,18
+    CONTROL         "Active",IDC_POINT_LIGHT_ACTIVE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,7,29,51,14
+    CONTROL         "Render Light as Object",
+                    IDC_POINT_LIGHT_AS_OBJECT_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,78,29,89,14
+    EDITTEXT        IDC_POINT_LIGHT_X_EDIT,62,52,27,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_POINT_LIGHT_Y_EDIT,110,52,27,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_POINT_LIGHT_Z_EDIT,158,52,27,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Location: ",IDC_STATIC,7,55,31,11
+    LTEXT           "X:",IDC_STATIC,51,55,10,11
+    LTEXT           "Y:",IDC_STATIC,98,55,10,11
+    LTEXT           "Z:",IDC_STATIC,147,55,10,11
+    CONTROL         "Slider1",IDC_POINT_LIGHT_RED_SLIDER,"msctls_trackbar32",
+                    WS_TABSTOP,34,84,124,16
+    CONTROL         "Slider1",IDC_POINT_LIGHT_GREEN_SLIDER,"msctls_trackbar32",
+                    WS_TABSTOP,34,108,124,16
+    CONTROL         "Slider1",IDC_POINT_LIGHT_BLUE_SLIDER,"msctls_trackbar32",
+                    WS_TABSTOP,34,132,124,16
+    LTEXT           "Red:",IDC_STATIC,7,87,27,10
+    LTEXT           "Green:",IDC_STATIC,7,110,27,10
+    LTEXT           "Blue:",IDC_STATIC,7,133,27,10
+    RTEXT           "",IDC_POINT_LIGHT_RED_DISPLAY,159,85,28,12
+    RTEXT           "",IDC_POINT_LIGHT_GREEN_DISPLAY,159,108,28,12
+    RTEXT           "",IDC_POINT_LIGHT_BLUE_DISPLAY,159,131,28,12
+END
+
+IDD_MATERIAL_PROPERTY_PAGE DIALOG DISCARDABLE  0, 0, 350, 180
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Material 1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Material Name:",IDC_STATIC,7,13,51,8
+    EDITTEXT        IDC_MATERIAL_NAME_EDIT_BOX,61,9,74,13,ES_AUTOHSCROLL
+    GROUPBOX        "Ambient Material Coefficients   ",IDC_STATIC,7,32,336,
+                    34
+    LTEXT           "Ka Red: ",IDC_STATIC,13,49,28,8
+    LTEXT           "Ka Green: ",IDC_STATIC,119,49,32,8
+    LTEXT           "Ka Blue: ",IDC_STATIC,231,49,29,8
+    EDITTEXT        IDC_MATERIAL_AMBIENT_RED_EDIT_BOX,46,47,45,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_MATERIAL_AMBIENT_GREEN_EDIT_BOX,161,47,45,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_MATERIAL_AMBIENT_BLUE_EDIT_BOX,269,47,45,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    GROUPBOX        "Diffuse Material Coefficients   ",IDC_STATIC,7,74,336,
+                    34
+    LTEXT           "Kd Red: ",IDC_STATIC,13,91,28,8
+    LTEXT           "Kd Green: ",IDC_STATIC,119,91,32,8
+    LTEXT           "Kd Blue: ",IDC_STATIC,231,91,29,8
+    EDITTEXT        IDC_MATERIAL_DIFFUSE_RED_EDIT_BOX,46,89,45,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_MATERIAL_DIFFUSE_GREEN_EDIT_BOX,161,89,45,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_MATERIAL_DIFFUSE_BLUE_EDIT_BOX,269,89,45,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    GROUPBOX        "Specular Material Coefficients   ",IDC_STATIC,7,114,336,
+                    59
+    LTEXT           "Ks Red: ",IDC_STATIC,13,132,28,8
+    LTEXT           "Ks Green: ",IDC_STATIC,119,132,32,8
+    LTEXT           "Ks Blue: ",IDC_STATIC,231,132,29,8
+    EDITTEXT        IDC_MATERIAL_SPECULAR_RED_EDIT_BOX,46,130,45,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_MATERIAL_SPECULAR_GREEN_EDIT_BOX,161,130,45,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_MATERIAL_SPECULAR_BLUE_EDIT_BOX,269,130,45,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Specular Exponent: ",IDC_STATIC,197,155,66,9
+    EDITTEXT        IDC_MATERIAL_SPECULAR_EXPONENT_EDIT_BOX,270,152,45,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+END
+
+IDD_MATERIAL_SELECTOR_DIALOG DIALOG DISCARDABLE  0, 0, 162, 278
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Material Selector"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,28,257,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,97,257,50,14
+    LTEXT           "Use the Material Selector palette to select\n the material for the current object. You can \nuse the Material Editor palette to modify the \nvalues for each of these materials.",
+                    IDC_STATIC,7,7,140,35
+    CONTROL         "",IDC_MATERIAL_RADIO_1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,16,43,118,12
+    CONTROL         "",IDC_MATERIAL_RADIO_2,"Button",BS_AUTORADIOBUTTON,16,
+                    57,118,12
+    CONTROL         "",IDC_MATERIAL_RADIO_3,"Button",BS_AUTORADIOBUTTON,16,
+                    71,118,12
+    CONTROL         "",IDC_MATERIAL_RADIO_4,"Button",BS_AUTORADIOBUTTON,16,
+                    85,118,12
+    CONTROL         "",IDC_MATERIAL_RADIO_5,"Button",BS_AUTORADIOBUTTON,16,
+                    99,118,12
+    CONTROL         "",IDC_MATERIAL_RADIO_6,"Button",BS_AUTORADIOBUTTON,16,
+                    113,118,12
+    CONTROL         "",IDC_MATERIAL_RADIO_7,"Button",BS_AUTORADIOBUTTON,16,
+                    127,118,12
+    CONTROL         "",IDC_MATERIAL_RADIO_8,"Button",BS_AUTORADIOBUTTON,16,
+                    141,118,12
+    CONTROL         "",IDC_MATERIAL_RADIO_9,"Button",BS_AUTORADIOBUTTON,16,
+                    155,118,12
+    CONTROL         "",IDC_MATERIAL_RADIO_10,"Button",BS_AUTORADIOBUTTON,16,
+                    169,118,12
+    CONTROL         "",IDC_MATERIAL_RADIO_11,"Button",BS_AUTORADIOBUTTON,16,
+                    183,118,12
+    CONTROL         "",IDC_MATERIAL_RADIO_12,"Button",BS_AUTORADIOBUTTON,16,
+                    197,118,12
+    CONTROL         "",IDC_MATERIAL_RADIO_13,"Button",BS_AUTORADIOBUTTON,16,
+                    211,118,12
+    CONTROL         "",IDC_MATERIAL_RADIO_14,"Button",BS_AUTORADIOBUTTON,16,
+                    225,118,12
+    CONTROL         "",IDC_MATERIAL_RADIO_15,"Button",BS_AUTORADIOBUTTON,16,
+                    239,118,12
+END
+
+IDD_Z_BUFFER_PARAMETERS_DIALOG DIALOG DISCARDABLE  0, 0, 248, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Z-Buffer Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,135,106,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,191,106,50,14
+    LTEXT           "Use the Z-Buffer parameters to set the size of the rendered screen, as \nwell as the distances that define the Z-Buffer. The screen size parameters\nallow the user to set the visible area of the screen for the Z-Buffer.",
+                    IDC_STATIC,7,7,234,30
+    LTEXT           "u_min: ",IDC_STATIC,7,38,24,9
+    LTEXT           "u_max: ",IDC_STATIC,7,54,24,9
+    LTEXT           "v_min: ",IDC_STATIC,93,38,24,9
+    LTEXT           "v_max: ",IDC_STATIC,93,54,24,9
+    LTEXT           "z_near: ",IDC_STATIC,170,38,24,9
+    LTEXT           "z_far: ",IDC_STATIC,170,54,24,9
+    EDITTEXT        IDC_Z_BUFFER_U_MIN_EDIT_BOX,33,37,34,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_Z_BUFFER_U_MAX_EDIT_BOX,33,52,34,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_Z_BUFFER_V_MIN_EDIT_BOX,118,37,34,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_Z_BUFFER_V_MAX_EDIT_BOX,118,52,34,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_Z_BUFFER_Z_NEAR_EDIT_BOX,200,37,34,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_Z_BUFFER_Z_FAR_EDIT_BOX,200,52,34,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Screen Rows: ",IDC_STATIC,7,86,47,9
+    LTEXT           "Screen Columns: ",IDC_STATIC,109,86,54,9
+    EDITTEXT        IDC_Z_BUFFER_SCREEN_ROWS_EDIT_BOX,65,83,34,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_Z_BUFFER_SCREEN_COLUMNS_EDIT_BOX,167,83,34,13,
+                    ES_RIGHT | ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "homework2 MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "homework2\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "homework2.EXE\0"
+            VALUE "ProductName", "homework2 Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_OBJECT_MANAGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_VIEW_PARAMETERS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 287
+    END
+
+    IDD_PROJECTION_METHOD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_TRANSFORMATION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_LINE_THICKNESS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_BACKGROUND_COLOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_LIGHT_PARAMETERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 585
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_AMBIENT_LIGHT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_POINT_LIGHT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_MATERIAL_PROPERTY_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_MATERIAL_SELECTOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 271
+    END
+
+    IDD_Z_BUFFER_PARAMETERS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 241
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "\nThree Dimensional Transformations\n \n\n"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "homework2"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Exit the program\nExit Program"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_OBJECT_MANAGER      "Open the Object Manager\nObject Manager"
+    IDM_TRANSFORMATION      "Open the Affine Transformations Palette\nTransformation Palette"
+    IDM_VIEWING             "Open the Camera Viewing Palette\nCamera Palette"
+    IDM_WIRE_FRAME          "Render Scene in Wire Frame Mode\nWire Frame"
+    IDM_WIRE_FRAME_DEPTH_CUE 
+                            "Render the scene in Wire Frame / Depth Cue Mode\nWire Frame with Depth Cue"
+    IDM_WIRE_FRAME_BACKFACE_ELIMINATION 
+                            "Render Scene in Wire Frame Mode with Backface Elimination\nWire Frame with Backface Elimination"
+    IDM_PAINTERS_ALGORITHM  "Render Scene in Painter's Algorithm Mode\nPainter's Algorithm"
+    IDM_LIGHT_PARAMETERS    "Modify the lights in the scene\nLight Parameters"
+    ID_PARAMETERS_PROJECTIONMETHOD 
+                            "Set the Projection Type\nProjection Method"
+    ID_OPTIONS_LINETHICKNESS 
+                            "Set the wireframe model's line thickness\nWire Frame model line thickness"
+    ID_OPTIONS_BACKGROUNDCOLOR "Set the Background Color\nBackground Color"
+    ID_OPTIONS_MATERIALSELECTOR 
+                            "Modify the material on the current object in Painter's Algorithm Mode\nSelect material for current object"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_PAINTERS_ALGORITHM_TRACED_FACETS 
+                            "Render Scene in Painter's Algorithm Mode with traced facets\nPainter's Algorithm with traced facets"
+    ID_LIGHTSOURCES_DISPLAYLIGHTSASOBJECTS 
+                            "Display the lights in the scene as viewable objects."
+    ID_LIGHTSOURCES_SHOWLIGHTCOLORRINGS 
+                            "Shows the color contributions of the light objects with a ring when lights can be viewed as objects."
+    ID_LIGHTSOURCES_AMBIENTLIGHTPROPERTIES 
+                            "Set the ambient light RGB values for the scene."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_LIGHTSOURCES_POINTLIGHT1PARAMETERS 
+                            "Set the parameters for a point light."
+    IDM_DRAW_AXIS           "Draw the coordinate axis in the scene."
+    IDM_GORAUD_SHADING      "Render scene with Gouraud Shading\nGouraud Shading"
+    IDM_PHONG_SHADING       "Render Scene with Phong Shading\nPhong Shading"
+    IDM_MOUSE_CAMERA_PAN    "Use the mouse to pan the camera around the scene."
+    IDM_MATERIAL_EDITOR     "Edit the material coefficients"
+    ID_MATERIALSELECTOR     "Select a material for the current object.\nMaterial Selector"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PARAMETERS_ZBUFFERPARAMETERS 
+                            "Set the parameters for the z-buffer\nZ-Buffer Parameters"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\homework2.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
